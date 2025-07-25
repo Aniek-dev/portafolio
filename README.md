@@ -19,7 +19,7 @@ Un sitio web personal donde muestro mis proyectos, habilidades y experiencia com
 
 ### Visitar el Sitio 
 
-[Entrar al portafolio ](https://github.com/Aniek-dev/portafolio.git)
+[Entrar al portafolio ](https://aniek-dev.github.io/portafolio/).
 
 
 ## License
