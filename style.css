@@ -181,7 +181,7 @@ section {
     0 0 100px var(--main-color);
 }
 .about-content h2 {
-  font-size: 7rem;
+  font-size:7rem;
   text-align: left;
 }
 .about-content p {
@@ -391,3 +391,29 @@ top: 100%; /* justo debajo del botón */
 .btn-group .dropdown {
   margin-right: 6rem;
 }
+/*****************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-item {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .dropdown-item:hover {
+    background-color: #ddd;
+  }
+
