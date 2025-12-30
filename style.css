@@ -417,3 +417,169 @@ top: 100%; /* justo debajo del botón */
     background-color: #ddd;
   }
 
+////////////animacion letras////////////////
+
+
+body {
+  background: #182028;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  /* FRASE 1: Frontend Developer */
+  0%, 30% { content: ""; }
+  1% { content: "F"; }
+  2% { content: "Fr"; }
+  3% { content: "Fro"; }
+  4% { content: "Fron"; }
+  5% { content: "Front"; }
+  6% { content: "Fronte"; }
+  7% { content: "Fronten"; }
+  8% { content: "Frontend"; }
+  9% { content: "Frontend "; }
+  10% { content: "Frontend D"; }
+  11% { content: "Frontend De"; }
+  12% { content: "Frontend Dev"; }
+  13% { content: "Frontend Deve"; }
+  14% { content: "Frontend Devel"; }
+  15% { content: "Frontend Develo"; }
+  16% { content: "Frontend Develop"; }
+  17% { content: "Frontend Develope"; }
+  18%, 25% { content: "Frontend Developer"; } /* Pausa en la palabra */
+  26% { content: "Frontend Develope"; }
+  27% { content: "Frontend Develop"; }
+  28% { content: "Frontend Devel"; }
+  29% { content: "Frontend Dev"; }
+
+  /* FRASE 2: Web Developer */
+  33% { content: ""; }
+  34% { content: "W"; }
+  35% { content: "We"; }
+  36% { content: "Web"; }
+  37% { content: "Web "; }
+  38% { content: "Web D"; }
+  39% { content: "Web De"; }
+  40% { content: "Web Dev"; }
+  41% { content: "Web Deve"; }
+  42% { content: "Web Devel"; }
+  43% { content: "Web Develo"; }
+  44% { content: "Web Develop"; }
+  45% { content: "Web Develope"; }
+  46%, 58% { content: "Web Developer"; } /* Pausa */
+  59% { content: "Web Develope"; }
+  60% { content: "Web Develop"; }
+  61% { content: "Web Develo"; }
+  62% { content: "Web Devel"; }
+  63% { content: "Web Dev"; }
+  64% { content: "Web "; }
+
+  /* FRASE 3: Creative Coder */
+  67% { content: ""; }
+  68% { content: "C"; }
+  69% { content: "Cr"; }
+  70% { content: "Cre"; }
+  71% { content: "Crea"; }
+  72% { content: "Creat"; }
+  73% { content: "Creati"; }
+  74% { content: "Creativ"; }
+  75% { content: "Creative"; }
+  76% { content: "Creative "; }
+  77% { content: "Creative C"; }
+  78% { content: "Creative Co"; }
+  79% { content: "Creative Cod"; }
+  80% { content: "Creative Code"; }
+  81%, 94% { content: "Creative Coder"; } /* Pausa */
+  95% { content: "Creative Cod"; }
+  96% { content: "Creative Co"; }
+  97% { content: "Creative C"; }
+  98% { content: "Creative "; }
+  99%, 100% { content: ""; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "writer"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
+/**********************/
+.typewriter {
+  display: inline-block;
+  text-align: left;       
+  min-width: 380px;       /* largo de "Frontend Developer" */
+  color: var(--main-color);
+  position: relative;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 12s infinite;
+  white-space: nowrap;   
+}
+
+.typewriter::after {
+  content: ""; 
+  display: inline-block; 
+  border-right: 0.5ch solid var(--main-color);
+  animation: blink 0.5s linear infinite;
+  margin-left: 5px;
+  height: 1em; 
+  vertical-align: middle; /* centrar verticalmente */
+}
+
+
