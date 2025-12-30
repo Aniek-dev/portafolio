@@ -42,7 +42,7 @@ utiliza el siguiente comando en tu terminal:
 ```
 Abre el proyecto en tu editor de código (VS Code, etc.)
 
-### 🔗 Enlaces
+# 🔗 Enlaces
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ana-villarreal-gonzalez/)
 
 
