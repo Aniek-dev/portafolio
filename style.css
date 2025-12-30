@@ -561,7 +561,7 @@ h1 {
 .typewriter {
   display: inline-block;
   text-align: left;       
-  min-width: 380px;       /* largo de "Frontend Developer" */
+  min-width: 300px;       /* largo de "Frontend Developer" */
   color: var(--main-color);
   position: relative;
 }
@@ -581,5 +581,6 @@ h1 {
   height: 1em; 
   vertical-align: middle; /* centrar verticalmente */
 }
+
 
 
